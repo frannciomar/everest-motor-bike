@@ -1,6 +1,6 @@
 {
- "versao": 5,
- "gerado": "2026-11-24T02:58:45.073Z",
+ "versao": 6,
+ "gerado": "2026-11-24T05:30:34.693Z",
  "formato": "m4a HE-AAC v1 16 kbps mono 22,05 kHz (exceções a 20 kbps/44,1 kHz listadas em tools/vozes/qualidade20.json)",
  "origem": "Artlist AI Voice Over — Eleven v3, voz masculina \"Explore\", GRITADA: tag [screaming] + CAIXA ALTA, estabilidade 0.0 (ver LICENCAS.txt)",
  "clipes": [
@@ -143,16 +143,6 @@
    "arquivo": "pt/pt_chegada_1.m4a",
    "duracao_ms": 1781,
    "sha256": "5127e93af15ae233d04bcc44de30cfc5eca7a298fe73d8a77bcc8345177c4b19"
-  },
-  {
-   "id": "pt_penhasco_1",
-   "tipo": "fala",
-   "idioma": "pt",
-   "situacao": "penhasco",
-   "texto": "Que vista, hein?",
-   "arquivo": "pt/pt_penhasco_1.m4a",
-   "duracao_ms": 1690,
-   "sha256": "cefda60a1acd38d68eac8ca46468b2f658bfd43ea6927c9081c17928c3d1894a"
   },
   {
    "id": "en_inicio_1",
@@ -315,16 +305,6 @@
    "sha256": "c0ca3ba4fa334ce43ff25cb7fd48823dfaf76b25c7083571982f200288808c33"
   },
   {
-   "id": "en_penhasco_1",
-   "tipo": "fala",
-   "idioma": "en",
-   "situacao": "penhasco",
-   "texto": "What a view, huh?",
-   "arquivo": "en/en_penhasco_1.m4a",
-   "duracao_ms": 2194,
-   "sha256": "539b555a53b26f2747a377dce4559442f642d2f3ff748358a6a7db4871ddf67b"
-  },
-  {
    "id": "es_inicio_1",
    "tipo": "fala",
    "idioma": "es",
@@ -473,16 +453,6 @@
    "arquivo": "es/es_chegada_1.m4a",
    "duracao_ms": 2505,
    "sha256": "094db5830b1962de93ae5c560c2112eb8133700b1220accbe8535b9e9b96774f"
-  },
-  {
-   "id": "es_penhasco_1",
-   "tipo": "fala",
-   "idioma": "es",
-   "situacao": "penhasco",
-   "texto": "Qué vista, ¿eh?",
-   "arquivo": "es/es_penhasco_1.m4a",
-   "duracao_ms": 1306,
-   "sha256": "bf9a7166fc1b555ce936cac2481b1fe7332432f7384d4685aab2e8dcda65a7b6"
   },
   {
    "id": "aviso_lava_en",
@@ -2073,6 +2043,16 @@
    "arquivo": "es/es_lava_r4.m4a",
    "duracao_ms": 2508,
    "sha256": "c0b007c9cf40b25478e91a108d7c4b8c515fdebddf7b3cbd2533dd0aafad1c9a"
+  },
+  {
+   "id": "pt_penhasco_1",
+   "tipo": "fala",
+   "idioma": "pt",
+   "situacao": "penhasco",
+   "texto": "Essa vai para minha mãe, obrigado minha rainha, te vejo logo!",
+   "arquivo": "pt/pt_penhasco_1.m4a",
+   "duracao_ms": 4519,
+   "sha256": "dccb98366574da63f692666768a925e1c7560c51446ed656d9ceb839527bb359"
   }
  ]
 }

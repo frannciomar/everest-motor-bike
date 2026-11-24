@@ -6,9 +6,9 @@
 // (pedido condicional: se nada mudou o servidor responde 304 e nada é baixado de novo). Versão nova = cache novo.
 // BUILD = número visível no menu (v3/VERSION); VERSION = hash do HTML. Os dois entram no texto deste arquivo: qualquer mudança
 // de build ou de conteúdo muda os bytes do sw.js, e o navegador instala o service worker novo (cache novo, o antigo é apagado).
-const BUILD = '5.0', VERSION = '93705d18c814', CACHE = 'emb-' + VERSION;
+const BUILD = '5.1', VERSION = '5f684a8c127f', CACHE = 'emb-' + VERSION;
 console.log('[sw] EVEREST MOTORBIKE BUILD ' + BUILD + ' (cache ' + CACHE + ')');
-const SHELL = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-192.png', 'icon-maskable-512.png', 'apple-touch-icon.png', "vozes/manifest.json", "vozes/gritos/g_uhul_a.m4a", "vozes/gritos/g_uhuuul_a.m4a", "vozes/gritos/g_uhuuul_b.m4a", "vozes/gritos/g_irru_a.m4a", "vozes/gritos/g_irru_b.m4a", "vozes/gritos/g_argh_a.m4a", "vozes/gritos/g_argh_b.m4a", "vozes/gritos/g_berro_a.m4a", "vozes/gritos/g_ei_a.m4a", "vozes/gritos/g_ei_b.m4a", "vozes/gritos/g_berro_d.m4a", "vozes/gritos/g_empina_a.m4a", "vozes/gritos/g_empina_b.m4a"];
+const SHELL = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-192.png', 'icon-maskable-512.png', 'apple-touch-icon.png', "vozes/manifest.json", "vozes/gritos/g_uhul_a.m4a", "vozes/gritos/g_uhuuul_a.m4a", "vozes/gritos/g_uhuuul_b.m4a", "vozes/gritos/g_irru_a.m4a", "vozes/gritos/g_irru_b.m4a", "vozes/gritos/g_argh_a.m4a", "vozes/gritos/g_argh_b.m4a", "vozes/gritos/g_berro_a.m4a", "vozes/gritos/g_ei_a.m4a", "vozes/gritos/g_ei_b.m4a", "vozes/gritos/g_berro_d.m4a", "vozes/gritos/g_empina_a.m4a", "vozes/gritos/g_empina_b.m4a", "pegadinha/gato.mp4"];
 self.addEventListener('install', (e) => {
   // um arquivo que falhe (ex.: ícone ausente) não impede o jogo de ficar offline
   e.waitUntil(caches.open(CACHE).then((c) => Promise.all(SHELL.map((u) => c.add(new Request(u, { cache: 'reload' })).catch(() => {})))).then(() => self.skipWaiting()));
